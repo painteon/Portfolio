@@ -113,7 +113,7 @@ nav{
 .red-sun{
   height: 500px;
   width: 500px;
-  right: 500px;
+  right: 508px;
   top: 190px;
   overflow: hidden;
   position: fixed;
@@ -265,11 +265,23 @@ nav{
   }
 }
 
-@media screen and (max-width: 808px) {
+@media screen and (max-width: 853px) {
   .red-sun{
     height: 500px;
     width: 500px;
-    right: 18%;
+    right: 20%;
+    top: 190px;
+    overflow: hidden;
+    position: fixed;
+    z-index: -100;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .red-sun{
+    height: 500px;
+    width: 500px;
+    right: 12%;
     top: 190px;
     overflow: hidden;
     position: fixed;
@@ -281,7 +293,7 @@ nav{
   .red-sun{
     height: 500px;
     width: 500px;
-    right: 7%;
+    right: 5%;
     top: 190px;
     overflow: hidden;
     position: fixed;
