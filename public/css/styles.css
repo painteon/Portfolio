@@ -264,6 +264,20 @@ nav{
     z-index: -100;
   }
 }
+@media screen and (max-width: 895px) {
+  .red-sun{
+    height: 500px;
+    width: 500px;
+    right: 23%;
+    top: 190px;
+    overflow: hidden;
+    position: fixed;
+    z-index: -100;
+  }
+  .nav-item{
+    width: 70%;
+  }
+}
 
 @media screen and (max-width: 853px) {
   .red-sun{
@@ -274,6 +288,9 @@ nav{
     overflow: hidden;
     position: fixed;
     z-index: -100;
+  }
+  .nav-item{
+    width: 70%;
   }
 }
 
@@ -287,6 +304,9 @@ nav{
     position: fixed;
     z-index: -100;
   }
+  .nav-item{
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 608px) {
@@ -298,5 +318,8 @@ nav{
     overflow: hidden;
     position: fixed;
     z-index: -100;
+  }
+  .nav-item{
+    width: 90%;
   }
 }
