@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
-const PORT = 3000 || process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 
 //Core code
@@ -23,5 +23,5 @@ app.get("/", function (req, res){
 
 
 app.listen(PORT, function(){
-  console.log("Server running successfully at" + PORT);
+  console.log("Server running successfully at " + PORT);
 });
