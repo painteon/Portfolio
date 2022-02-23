@@ -1,0 +1,253 @@
+body{
+  background-image: url("https://www.transparenttextures.com/patterns/grid-me.png"), linear-gradient( #612897, #9A0680 43%, #FC28FB, #FFADF0, #FC28FB, #9A0680 86%, #612897);
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+
+h1{
+  margin: auto;
+  font-size: 5.5em;
+  position: relative;
+  top: 37%;
+  z-index: 2;
+  color: #3E065F;
+  text-shadow: 2px 2px 8px #FFADF0;
+  font-family: 'Oswald', sans-serif;
+  text-decoration-color: #3E065F;
+  opacity: 0;
+  transition: all 1.2s;
+}
+
+h2{
+  position: relative;
+  top: 35%;
+  left: 0.2%;
+  z-index: 2;
+  color: #3E065F;
+  text-shadow: 2px 2px 8px #FFADF0;
+  font-family: 'Oswald', sans-serif;
+  text-decoration-color: #3E065F;
+  width: 100%;
+  opacity: 0;
+  transition: all 1.2s;
+}
+
+h2 span{
+  font-size: 1.2em;
+}
+
+p{
+  margin-bottom: 3%;
+  margin top: 1%;
+  font-size: 120%;
+}
+
+nav{
+  scroll-behavior: smooth;
+  background-color: #221F3B;
+  overflow: hidden;
+  top: -70px;
+  transition: all 0.4s;
+}
+
+.nav-item{
+  width: 50%;
+}
+
+.navbar-item{
+  color: #FFADF0;
+  transition: all 0.7s;
+}
+
+.navbar-item:hover{
+  color: #FC28FB;
+  background-color: #343A40;
+}
+
+
+.background{
+  width: 90%;
+  margin: auto;
+  margin-bottom: 2%;
+  background-image: linear-gradient(315deg, #221F3B 0%, #343A40 24%, #221F3B 94%);
+  border-radius: 20px;
+  border-color: #FF008E;
+  box-shadow: 0 0 11px 1px #FF008E;
+  padding: 4%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+  z-index: 4;
+  font-family: 'Oswald', sans-serif;
+  position: relative;
+  opacity: 0;
+  transition: all 2s;
+}
+
+.container-md{
+  background-color: #FDEBF7;
+  border-radius: 20px;
+  padding: 6%;
+  padding-bottom: 1%;
+  padding-top: 3%;
+  margin-bottom: 3%;
+  box-shadow: 0 0 11px 3px #9A0680;
+  text-align: center;
+}
+
+.website-buttons{
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.dropdown-menu{
+  box-shadow: 0 0 11px 3px #FF008E;
+}
+
+.intro{
+  text-align: center;
+  height: 500px;
+}
+
+.red-sun{
+  height: 500px;
+  width: 500px;
+  right: 500px;
+  top: 190px;
+  z-index: 0;
+  overflow: hidden;
+  position: fixed;
+  z-index: -100;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, -100px);
+    box-shadow: 0px 0px 4px 4px #FFADF0;
+  }
+  55%{
+    opacity: 0;
+  }
+  100%{
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes pulse-2 {
+  0% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, 100px);
+    box-shadow: 0px 0px 4px 4px #FFADF0;
+  }
+  55%{
+    opacity: 0;
+  }
+  100%{
+    transform: translate(0px, 0px);
+  }
+}
+
+.strobe{
+  height: 250px;
+  width: 100%;
+  position: fixed;
+  bottom: 18%;
+  z-index: -105;
+}
+
+.strobe-light{
+  position: relative;
+  color: #FFADF0;
+  top: 40%;
+  font-size: 3px;
+  box-shadow: 0px 0px 4px 4px #FC28FB;
+  z-index: -2000;
+  transition: opacity 0.8s;
+  animation: pulse 2s ease-out 2s infinite;
+  opacity: 0;
+}
+
+.strobe-light-2{
+  position: relative;
+  color: #FFADF0;
+  top: 40%;
+  font-size: 3px;
+  box-shadow: 0px 0px 4px 4px #FC28FB;
+  z-index: -2000;
+  transition: opacity 0.8s;
+  animation: pulse-2 2s ease-out 2s infinite;
+  opacity: 0;
+}
+
+.vr{
+  color: #FFADF0;
+  width: 2px;
+}
+
+/* TITLES */
+
+.sub-title{
+  text-align: center;
+  text-decoration-color: #3E065F;
+  text-decoration: underline;
+  text-shadow: 2px 2px 8px #FFADF0;
+  font-size: 2rem;
+  margin-bottom: 4%;
+}
+
+.mini-title{
+  text-decoration-color: #3E065F;
+  text-decoration: underline;
+  text-shadow: 2px 2px 8px #FFADF0;
+}
+
+/* IMAGES */
+
+.cert{
+  width: 600px;
+  height: 400px;
+}
+
+.decorate-btn{
+  background-color: #3E065F;
+  color: #FFADF0;
+  transition: all 0.4s;
+}
+
+.decorate-btn:hover{
+  color: #FC28FB;
+  background-color: #343A40;
+}
+.decorate-btn:active{
+  background-color: #3E065F;
+  color: #FFADF0;
+}
+.decorate-btn::selection{
+  background-color: #3E065F;
+  color: #FFADF0;
+}
+
+.collapse{
+  position: relative;
+  right: 28px !important;
+  top: 5px !important;
+}
+
+.tech-pics{
+  font-size: 5em;
+  font-weight: bold;
+  color: #3E065F;
+}
+
+.gallery-pic{
+  width: 90px;
+  height: 80px;
+}
