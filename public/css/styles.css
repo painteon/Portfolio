@@ -1,5 +1,6 @@
 body{
-  background-image: url("https://www.transparenttextures.com/patterns/grid-me.png"), linear-gradient( #612897, #9A0680 43%, #FC28FB, #FFADF0, #FC28FB, #9A0680 86%, #612897);
+  /* background-image: url("https://www.transparenttextures.com/patterns/grid-me.png"), linear-gradient( #612897, #9A0680 43%, #FC28FB, #FFADF0, #FC28FB, #9A0680 86%, #612897); */
+  background-image: url("https://www.transparenttextures.com/patterns/grid-me.png"), linear-gradient( #612897, #9A0680 360px, #FC28FB, #FFADF0, #FC28FB, #9A0680 660px, #612897);
   background-attachment: fixed;
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -113,7 +114,8 @@ nav{
 .red-sun{
   height: 500px;
   width: 500px;
-  right: 508px;
+  left: 50%;
+  transform: translateX(-50%);
   top: 190px;
   overflow: hidden;
   position: fixed;
@@ -162,7 +164,7 @@ nav{
   z-index: -105;
 }
 
-.strobe-light{
+/* .strobe-light{
   position: relative;
   color: #FFADF0;
   top: 40%;
@@ -178,6 +180,29 @@ nav{
   position: relative;
   color: #FFADF0;
   top: 40%;
+  font-size: 3px;
+  box-shadow: 0px 0px 4px 4px #FC28FB;
+  z-index: -2000;
+  transition: opacity 0.8s;
+  animation: pulse-2 2s ease-out 2s infinite;
+  opacity: 0;
+} */
+.strobe-light{
+  position: relative;
+  color: #FFADF0;
+  top: 110px;
+  font-size: 3px;
+  box-shadow: 0px 0px 4px 4px #FC28FB;
+  z-index: -2000;
+  transition: opacity 0.8s;
+  animation: pulse 2s ease-out 2s infinite;
+  opacity: 0;
+}
+
+.strobe-light-2{
+  position: relative;
+  color: #FFADF0;
+  top: 110px;
   font-size: 3px;
   box-shadow: 0px 0px 4px 4px #FC28FB;
   z-index: -2000;
@@ -253,73 +278,42 @@ nav{
 
 /* BREAKPOINTS */
 
-@media screen and (max-width: 1308px) {
-  .red-sun{
-    height: 500px;
-    width: 500px;
-    right: 30%;
-    top: 190px;
-    overflow: hidden;
-    position: fixed;
-    z-index: -100;
-  }
-}
-@media screen and (max-width: 895px) {
-  .red-sun{
-    height: 500px;
-    width: 500px;
-    right: 23%;
-    top: 190px;
-    overflow: hidden;
-    position: fixed;
-    z-index: -100;
-  }
-  .nav-item{
-    width: 70%;
-  }
-}
+@media screen and (max-width: 800px), screen and (max-height: 600px) {
 
-@media screen and (max-width: 853px) {
-  .red-sun{
-    height: 500px;
-    width: 500px;
-    right: 20%;
+  /* body{
+    background-image: url("https://www.transparenttextures.com/patterns/grid-me.png"), linear-gradient( #612897, #9A0680 360px, #FC28FB, #FFADF0, #FC28FB, #9A0680 660px, #612897);
+  } */
+  .strobe-light{
+    position: relative;
+    color: #FFADF0;
     top: 190px;
-    overflow: hidden;
-    position: fixed;
-    z-index: -100;
+    font-size: 3px;
+    box-shadow: 0px 0px 4px 4px #FC28FB;
+    z-index: -2000;
+    transition: opacity 0.8s;
+    animation: pulse 2s ease-out 2s infinite;
+    opacity: 0;
   }
-  .nav-item{
-    width: 70%;
-  }
-}
 
-@media screen and (max-width: 740px) {
-  .red-sun{
-    height: 500px;
-    width: 500px;
-    right: 12%;
+  .strobe-light-2{
+    position: relative;
+    color: #FFADF0;
     top: 190px;
-    overflow: hidden;
-    position: fixed;
-    z-index: -100;
+    font-size: 3px;
+    box-shadow: 0px 0px 4px 4px #FC28FB;
+    z-index: -2000;
+    transition: opacity 0.8s;
+    animation: pulse-2 2s ease-out 2s infinite;
+    opacity: 0;
   }
-  .nav-item{
-    width: 80%;
-  }
-}
 
-@media screen and (max-width: 608px) {
-  .red-sun{
-    height: 500px;
-    width: 500px;
-    right: 5%;
-    top: 190px;
-    overflow: hidden;
-    position: fixed;
-    z-index: -100;
+  .tech-pics{
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #3E065F;
   }
+
   .nav-item{
-    width: 90%;
+    width: 100%;
   }
 }
