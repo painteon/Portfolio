@@ -289,9 +289,42 @@ nav{
   }
 }
 
+@media screen and (max-width: 700px) {
+  .cert{
+    width: 200px;
+    height: 100px;
+  }
+}
+
 @media screen and (max-width: 800px), screen and (max-height: 600px) {
 
   .strobe-light{
+    position: absolute;
+    color: #FFADF0;
+    top: 110px;
+    font-size: 3px;
+    box-shadow: 0px 0px 4px 4px #FC28FB;
+    z-index: -2000;
+    transition: opacity 0.8s;
+    animation: pulse 2s ease-out 2s infinite;
+    opacity: 0;
+    width: 100%;
+  }
+
+  .strobe-light-2{
+    position: absolute;
+    color: #FFADF0;
+    top: 110px;
+    font-size: 3px;
+    box-shadow: 0px 0px 4px 4px #FC28FB;
+    z-index: -2000;
+    transition: opacity 0.8s;
+    animation: pulse-2 2s ease-out 2s infinite;
+    opacity: 0;
+    width: 100%;
+  }
+
+  /* .strobe-light{
     position: fixed;
     color: #FFADF0;
     top: 500px;
@@ -315,14 +348,14 @@ nav{
     animation: pulse-2 2s ease-out 2s infinite;
     opacity: 0;
     width: 100%;
-  }
+  } */
 
   .nav-item{
     width: 100%;
   }
-
   .cert{
-    width: 400px;
-    height: 200px;
+    width: 200px;
+    height: 100px;
   }
+
 }
