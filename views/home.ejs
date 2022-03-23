@@ -38,45 +38,57 @@
   </div>
   <section class="background">
     <section class=" container-md bio" id="bio">
+      <img class="profile-pic" src="pictures/profile.PNG" alt="profile">
       <h3 class="sub-title">Bio</h3>
       <h5 class="mini-title">Greetings</h5>
       <p>Hello. My name is Bobby Imakavar, I am a Full-Stack web developer. I am familiar with both Front-End and Back-End technologies, however I specialize primarily in Front-End development.</p>
-      <h5 class="mini-title">Starting Point</h5>
-      <p>I began my journey in web development on January of 2020 by purchasing an online course on <span><a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">Udemy</a></span> and spending the next 6-7 months learning
-        everything the course had to offer. After the initial learning period, I spent the remainder of my time building my own websites.</p>
-      <h5 class="mini-title">History</h5>
-      <p>Prior to 2020, I was a recent college graduate with my bachelors of science in Biology. My original plan was to enter the medical field; however, after 2 years of working as an EMT and preparing for medical school, I found out that I did not enjoy it as much as I had believed. Up until that point in time, I had always admired having a career  in programming and technology, but I did not pursue it any further. Following that interest, I took a chance on an intro to programming course that utilized python and I thoroughly enjoyed the experience. Ever since then, I wanted to delve deeper into programming, but I felt pressured into making a career out of my Biology degree due to the four year university commitment. Not to mention, the monetary roadblock erected by thoughts of going to school for another degree. This was my thought process, until I realized that there was another way for me to enter software development without investing more years and money into schooling. I found Udemy by chance, explored its catalog of programming courses and took the leap into becoming a self taught software engineer. I haven't regretted making that decision. </p>
+      <a class="btn decorate-btn mini-title" data-bs-toggle="collapse" href="#ReadMore" role="button" aria-expanded="false" aria-controls="Cert">
+        Read More...
+      </a>
+      <div class="collapse-info-box collapse" id="ReadMore">
+        <h5 class="mini-title">Starting Point</h5>
+        <p>I began my journey in web development on January of 2020 by purchasing an online course on <span><a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/">Udemy</a></span> and spending the next 6-7 months learning
+          everything the course had to offer. After the initial learning period, I spent the remainder of my time building my own websites.</p>
+        <h5 class="mini-title">History</h5>
+        <p>Prior to 2020, I was a recent college graduate with my bachelors of science in Biology. My original plan was to enter the medical field; however, after 2 years of working as an EMT and preparing for medical school, I found out that I did not enjoy it as much as I had believed. Up until that point in time, I had always admired having a career  in programming and technology, but I did not pursue it any further. Following that interest, I took a chance on an intro to programming course that utilized python and I thoroughly enjoyed the experience. Ever since then, I wanted to delve deeper into programming, but I felt pressured into making a career out of my Biology degree due to the four year university commitment. Not to mention, the monetary roadblock erected by thoughts of going to school for another degree. This was my thought process, until I realized that there was another way for me to enter software development without investing more years and money into schooling. I found Udemy by chance, explored its catalog of programming courses and took the leap into becoming a self taught software engineer. I haven't regretted making that decision. </p>
+      </div>
     </section>
     <section class="container-md examples" id="examples">
       <h3 class="sub-title">My Websites</h3>
-      <p>These are all of the websites I have created, in order from newest to oldest starting from the left:</p>
+      <p>These are all of the websites I've created, starting from the left going from newest to oldest:</p>
       <div class="container-sm websites">
-        <button class="mini-title btn dropdown-toggle website-buttons decorate-btn" data-bs-toggle="dropdown" aria-expanded="false">Grocery Store</button>
-        <ul class="dropdown-menu">
-          <li class="dropdown-item"><a href="https://hidden-beach-41717.herokuapp.com/">Grocery Store</a></li>
-          <li class="dropdown-item">My most up to date website second only to the current website this is being displayed on</li>
-          <li class="dropdown-item">It is a landing page utilizing the Stripe API to intiate payments</li>
-          <li class="dropdown-item">The payments (using the test debit card's repeating 42's) are all archived on my personal stripe account</li>
-        </ul>
-        <button class="mini-title btn dropdown-toggle website-buttons decorate-btn" data-bs-toggle="dropdown" aria-expanded="false">Twitch Streamer Page</button>
-        <ul class="dropdown-menu">
-          <li class="dropdown-item"><a href="https://arcane-eyrie-36117.herokuapp.com/">Twitch Streamer Page</a></li>
-          <li class="dropdown-item">This is the second website that I made. It is a significant improvement from where I started.</li>
-          <li class="dropdown-item">This website is where I display my ability to work with API's and creating landing pages utilizing customer input.</li>
-          <li class="dropdown-item">This was a website I made in tandem with my girlfriend for when she streamed on Twitch</li>
-        </ul>
-        <button class="mini-title btn dropdown-toggle website-buttons decorate-btn" data-bs-toggle="dropdown" aria-expanded="false">Notes</button>
-        <ul class="dropdown-menu">
-          <li class="dropdown-item"><a href="https://arcane-forest-44651.herokuapp.com/">Notes website</a></li>
-          <li class="dropdown-item">This is my very first website created after I completed the Udemy course</li>
-          <li class="dropdown-item">It demonstrates how I can integrate the Front-End with a mongoose based database</li>
-          <li class="dropdown-item">This website is by far the worst looking one, but it serves as an indicator of where I started and a note in how I can manage database queries</li>
-        </ul>
+        <div class="website-buttons">
+          <a class="mini-title btn decorate-btn" href="https://hidden-beach-41717.herokuapp.com/">Grocery Store</a>
+          <button class="mini-title btn dropdown-toggle decorate-btn" data-bs-toggle="dropdown" aria-expanded="false"></button>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item">My most up to date website second only to the current website this is being displayed on</li>
+            <li class="dropdown-item">It is a landing page utilizing the Stripe API to intiate payments</li>
+            <li class="dropdown-item">The payments (using the test debit card's repeating 42's) are all archived on my personal stripe account</li>
+          </ul>
+        </div>
+        <div class="website-buttons">
+          <a class="mini-title btn decorate-btn" href="https://arcane-eyrie-36117.herokuapp.com/">Twitch Streamer Page</a>
+          <button class="mini-title btn dropdown-toggle decorate-btn" data-bs-toggle="dropdown" aria-expanded="false"></button>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item">This is the second website that I made. It is a significant improvement from where I started.</li>
+            <li class="dropdown-item">This website is where I display my ability to work with API's and creating landing pages utilizing customer input.</li>
+            <li class="dropdown-item">This was a website I made in tandem with my girlfriend for when she streamed on Twitch</li>
+          </ul>
+        </div>
+        <div class="website-buttons">
+          <a class="mini-title btn decorate-btn" href="https://arcane-forest-44651.herokuapp.com/">Notes</a>
+          <button class="mini-title btn dropdown-toggle decorate-btn" data-bs-toggle="dropdown" aria-expanded="false"></button>
+          <ul class="dropdown-menu">
+            <li class="dropdown-item">This is my very first website created after I completed the Udemy course</li>
+            <li class="dropdown-item">It demonstrates how I can integrate the Front-End with a mongoose based database</li>
+            <li class="dropdown-item">This website is by far the worst looking one, but it serves as an indicator of where I started and a note in how I can manage database queries</li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="container-md tech" id="tech">
       <h3 class="sub-title">Technology</h3>
-      <p>These are the technologies I have used the most:</p>
+      <p>These are the technologies I've used most:</p>
       <div class="gallery container">
           <div class="row">
             <div class="col-md-4 tech-pics">
@@ -128,7 +140,7 @@
           Certificate
         </a>
         <div class="collapse" id="Cert">
-          <img src="pictures/udemyCert.png" alt="udemy_cert">
+          <img class="cert " src="pictures/udemyCert.png" alt="udemy_cert">
         </div>
       </div>
     </section>
