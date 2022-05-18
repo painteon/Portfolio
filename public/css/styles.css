@@ -33,6 +33,7 @@ h2{
   width: 100%;
   opacity: 0;
   transition: all 1.2s;
+  padding-top: 5%;
 }
 
 h2 span{
@@ -83,8 +84,13 @@ nav{
   font-family: 'Oswald', sans-serif;
   position: relative;
   opacity: 0;
-  transition: all 2s;
+  transition: all 1.5s;
 }
+
+/* .fadeIn{
+  opacity: 0;
+  transition: all 0.5s ease;
+} */
 
 .container-md{
   background-color: #FDEBF7;
@@ -97,9 +103,14 @@ nav{
   text-align: center;
 }
 
+#ReadMore{
+  padding-bottom: 4%;
+}
+
 .website-buttons{
   margin-left: 2%;
   margin-right: 2%;
+  margin-bottom: 2%;
   display: inline-block;
 }
 
@@ -110,6 +121,7 @@ nav{
 .intro{
   text-align: center;
   height: 500px;
+  transition: all 0.4s;
 }
 
 .red-sun{
@@ -169,7 +181,7 @@ nav{
   position: fixed;
   color: #FFADF0;
   top: 500px;
-  font-size: 3px;
+  font-size: 8px;
   box-shadow: 0px 0px 4px 4px #FC28FB;
   z-index: -2000;
   transition: opacity 0.8s;
@@ -182,7 +194,7 @@ nav{
   position: fixed;
   color: #FFADF0;
   top: 500px;
-  font-size: 3px;
+  font-size: 8px;
   box-shadow: 0px 0px 4px 4px #FC28FB;
   z-index: -2000;
   transition: opacity 0.8s;
@@ -191,29 +203,6 @@ nav{
   width: 100%;
 }
 
-/* .strobe-light{
-  position: relative;
-  color: #FFADF0;
-  top: 110px;
-  font-size: 3px;
-  box-shadow: 0px 0px 4px 4px #FC28FB;
-  z-index: -2000;
-  transition: opacity 0.8s;
-  animation: pulse 2s ease-out 2s infinite;
-  opacity: 0;
-}
-
-.strobe-light-2{
-  position: relative;
-  color: #FFADF0;
-  top: 110px;
-  font-size: 3px;
-  box-shadow: 0px 0px 4px 4px #FC28FB;
-  z-index: -2000;
-  transition: opacity 0.8s;
-  animation: pulse-2 2s ease-out 2s infinite;
-  opacity: 0;
-} */
 
 .vr{
   color: #FFADF0;
@@ -286,6 +275,8 @@ nav{
   height: 200px;
   margin: 50px;
   box-shadow: 0px 0px 4px 4px #FFADF0;
+  transition: all 0.8s ease;
+  opacity: 0;
 }
 
 .tech-pics{
@@ -320,13 +311,13 @@ nav{
   }
 }
 
-@media screen and (max-width: 800px), screen and (max-height: 600px) {
+@media screen and (max-width: 880px), screen and (max-height: 600px) {
 
   .strobe-light{
     position: absolute;
     color: #FFADF0;
-    top: 110px;
-    font-size: 3px;
+    top: 125px;
+    font-size: 8px;
     box-shadow: 0px 0px 4px 4px #FC28FB;
     z-index: -2000;
     transition: opacity 0.8s;
@@ -338,8 +329,8 @@ nav{
   .strobe-light-2{
     position: absolute;
     color: #FFADF0;
-    top: 110px;
-    font-size: 3px;
+    top: 125px;
+    font-size: 8px;
     box-shadow: 0px 0px 4px 4px #FC28FB;
     z-index: -2000;
     transition: opacity 0.8s;
@@ -347,39 +338,15 @@ nav{
     opacity: 0;
     width: 100%;
   }
-
-  /* .strobe-light{
-    position: fixed;
-    color: #FFADF0;
-    top: 500px;
-    font-size: 3px;
-    box-shadow: 0px 0px 4px 4px #FC28FB;
-    z-index: -2000;
-    transition: opacity 0.8s;
-    animation: pulse 2s ease-out 2s infinite;
-    opacity: 0;
-    width: 100%;
-  }
-
-  .strobe-light-2{
-    position: fixed;
-    color: #FFADF0;
-    top: 500px;
-    font-size: 3px;
-    box-shadow: 0px 0px 4px 4px #FC28FB;
-    z-index: -2000;
-    transition: opacity 0.8s;
-    animation: pulse-2 2s ease-out 2s infinite;
-    opacity: 0;
-    width: 100%;
-  } */
 
   .nav-item{
     width: 100%;
+    position: relative;
+    left: -3%;
   }
   .cert{
-    width: 600px;
-    height: 400px;
+    width: 500px;
+    height: 300px;
     position: relative;
     left: 30px !important;
     top: 5px !important;
