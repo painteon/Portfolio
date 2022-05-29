@@ -21,7 +21,6 @@ app.get("/", function (req, res){
 });
 
 
-
 app.listen(PORT, function(){
   console.log("Server running successfully at " + PORT);
 });

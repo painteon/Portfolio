@@ -54,6 +54,10 @@ nav{
   transition: all 0.4s;
 }
 
+form{
+  display: inline-block;
+}
+
 .nav-item{
 
 }
