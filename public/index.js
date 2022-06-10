@@ -1,4 +1,3 @@
-$("nav").css("top", "-70px");
 $(document).scroll(function() {navbar()});
 
   function navbar() {

@@ -58,8 +58,8 @@ form{
   display: inline-block;
 }
 
-.nav-item{
-
+.fixed-top{
+  top: -70px;
 }
 
 .navbar-item{
@@ -245,17 +245,28 @@ form{
   background-color: #3E065F;
   color: #FFADF0;
   transition: all 0.4s;
+  border-color: #3E065F;
+  box-shadow: 0 0 3px 1px #3E065F;
 }
 
-.decorate-btn:hover{
+.decorate-btn-alt{
+  background-color: #FDEBF7;
+  color: #3E065F;
+  border-color: #FC28FB;
+  box-shadow: 0 0 3px 1px #FC28FB;
+  transition: all 0.4s;
+  box-sizing: border-box;
+}
+
+.decorate-btn-alt:hover, .decorate-btn:hover{
   color: #FC28FB;
   background-color: #343A40;
 }
-.decorate-btn:active{
+.decorate-btn-alt:active, .decorate-btn:active{
   background-color: #3E065F;
   color: #FFADF0;
 }
-.decorate-btn::selection{
+.decorate-btn-alt::selection, .decorate-btn::selection{
   background-color: #3E065F;
   color: #FFADF0;
 }
